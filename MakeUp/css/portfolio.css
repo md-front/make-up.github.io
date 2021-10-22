@@ -1,0 +1,57 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  background-color: #e5e5d8;
+}
+.portfolio h2 {
+  margin: 0;
+  padding: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 32.4px;
+  color: #FFFFF0;
+  text-align: center;
+  background-color: #524b46;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.portfolio-album {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  justify-content: space-evenly;
+}
+.portfolio-album li {
+  display: flex;
+  margin-bottom: 20px;
+  align-content: center;
+  overflow: hidden;
+  height: 400px;
+  transition: 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #524b46;
+}
+.portfolio-album li:hover {
+  transform: scale(2.5);
+  box-shadow: 0px 0px 2px 1px #524b46;
+}
+.portfolio-album li:hover:nth-child(1),
+.portfolio-album li:hover:nth-child(2) {
+  transform: scale(2.5) translateY(80px);
+}
+.portfolio-album li:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.portfolio-album li img {
+  align-content: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+}
+/*# sourceMappingURL=portfolio.css.map */

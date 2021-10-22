@@ -1,0 +1,153 @@
+/*Fonts*/
+@font-size: 18px;
+@headers-color: #FFFFF0;
+/*backgrounds */
+@base-color: rgb(235, 235, 235);
+@nav-color: rgb(82, 75, 70);
+
+/*-------------------------------------------------------------------------------------------*/
+body {
+  background-color: @base-color;
+}
+
+.main-header {
+  height: 30px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-article {
+  display: flex;
+
+}
+
+.main-navigation h1 {
+  color: @headers-color;
+}
+
+.main-navigation {
+  padding: 10px;
+  background-color: @nav-color;
+  min-width: 230px;
+  min-height: 500px;
+  border-top-left-radius: 20px;
+
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation h1 {
+  font-size: 2*@font-size;
+  letter-spacing: 2px;
+}
+
+.main-navigation ul > li a div {
+  padding: 10px;
+  font-size: @font-size;
+}
+
+.main-navigation ul > li:hover {
+  background-color: #777b7e;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.main-pictures {
+
+  justify-content: center;
+  overflow: hidden;
+
+  & img {
+    max-width: 960px;
+    height: auto;
+  }
+}
+
+
+.social {
+  display: flex;
+}
+
+
+/*оформление ссылок*/
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+.main-navigation a:link,
+.main-navigation a:active,
+.main-navigation a:visited {
+  color: #FFFFF0;
+}
+
+.main-footer {
+  display: flex;
+  background: url("/img/lipstick.svg") no-repeat;
+  background-size: 20px;
+}
+
+.social {
+  display: flex;
+  margin-right: auto;
+  padding-top: 20px;
+
+}
+
+.social ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.social ul li {
+  display: block;
+  margin-left: 30px;
+}
+
+.social ul li div {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+.social-vk {
+  background: @base-color;
+  background: url("/img/sprite-icon-social-vk.jpg") no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+
+.social-youtube {
+  background: url("/img/sprite-icon-social-2.jpg") no-repeat -279px -21px;
+  background-size: 440px auto;
+
+}
+
+.social-Instagram {
+  background: url("/img/sprite-icon-social-2.jpg") no-repeat -207px -21px;
+  background-size: 440px auto;
+}
+
+.PISsk {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid crimson;
+  background: url("/img/sprite-icon-social-2.jpg") no-repeat;
+
+  background-size: 70%;
+}
